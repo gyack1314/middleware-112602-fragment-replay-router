@@ -1,0 +1,11 @@
+[
+  "ack",
+  "fragment",
+  "inspect",
+  "mapping",
+  "played",
+  "receive",
+  "replay",
+  "restart",
+  "tick"
+]

@@ -1,0 +1,10 @@
+{"at":0,"kind":"mapping","record":{"run":"alpha","alias":"u","revision":1,"actions":["rise"]}}
+{"at":1,"kind":"replay","record":{"run":"alpha","action":"rise","request":"r","required":["pose"],"optional":["touch"],"until":9}}
+{"at":2,"kind":"fragment","record":{"run":"alpha","source":"hand","source_seq":1,"alias":"u","channel":"pose","payload":"marker-p"}}
+{"at":3,"kind":"receive","record":{"request":"r","client":"view"}}
+{"at":4,"kind":"ack","record":{"request":"r","client":"view","packet":1,"channels":["pose"]}}
+{"at":5,"kind":"played","record":{"request":"r","client":"view","packet":1}}
+{"at":6,"kind":"mapping","record":{"run":"alpha","alias":"u","revision":2,"actions":["turn"]}}
+{"at":7,"kind":"restart","record":{}}
+{"at":8,"kind":"receive","record":{"request":"r","client":"view"}}
+{"at":9,"kind":"inspect","record":{"request":"r"}}

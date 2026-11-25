@@ -1,0 +1,12 @@
+{"at":0,"kind":"mapping","record":{"run":"a","alias":"brief","revision":1,"actions":["walk","hold"]}}
+{"at":0,"kind":"mapping","record":{"run":"b","alias":"brief","revision":1,"actions":["walk"]}}
+{"at":1,"kind":"replay","record":{"run":"a","action":"walk","request":"a","required":["pose"],"optional":["touch"],"until":10}}
+{"at":1,"kind":"replay","record":{"run":"b","action":"walk","request":"b","required":["pose"],"optional":["touch"],"until":10}}
+{"at":2,"kind":"fragment","record":{"run":"a","source":"axis","source_seq":5,"alias":"brief","channel":"pose","payload":"from-a"}}
+{"at":3,"kind":"fragment","record":{"run":"b","source":"axis","source_seq":5,"alias":"brief","channel":"pose","payload":"from-b"}}
+{"at":4,"kind":"receive","record":{"request":"a","client":"lab"}}
+{"at":4,"kind":"receive","record":{"request":"b","client":"lab"}}
+{"at":5,"kind":"mapping","record":{"run":"a","alias":"brief","revision":2,"actions":["walk"]}}
+{"at":6,"kind":"receive","record":{"request":"a","client":"lab"}}
+{"at":7,"kind":"ack","record":{"request":"a","client":"lab","packet":1,"channels":["pose"]}}
+{"at":8,"kind":"inspect","record":{"run":"a"}}
